@@ -7,7 +7,7 @@
 void type_integer()
 {
     printf("Целочисленное значение int\n");
-    printf("Размер типа int\t: %d байт\t", sizeof(int));
+    printf("Размер типа int\t: %d байт\t", sizeof(int)); //Требует %llu, но тупит
     printf("от %d до %d\n", INT_MAX, INT_MIN);
     int a = 1;
     printf("В программе  переменной a присвоено значение \"%d\"\n", a);
@@ -22,7 +22,7 @@ void type_integer()
 int main()
 {
     setlocale(LC_ALL, "rus");
-
+//Тип int
     type_integer();
 
     return 0;
